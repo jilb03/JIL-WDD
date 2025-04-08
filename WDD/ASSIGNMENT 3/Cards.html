@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: beige;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .card-content p {
+      color: black;
+    }
+
+    @media (max-width: 600px) {
+        .card-container{
+        flex-wrap: wrap;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="newyork.jpg">
+      <div class="card-content">
+        <h3>NEW YORK</h3>
+        <p>This picture is of Statue of liberty. Which is in New York USA.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="paris.jpg">
+      <div class="card-content">
+        <h3>LONDON</h3>
+        <p> This Picture is of London Bridge. It is in England UK.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="paris.jpg">
+      <div class="card-content">
+        <h3>PARIS</h3>
+        <p>This is a picture of Effil Tower. It's in Paris France.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
